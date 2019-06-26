@@ -40,7 +40,7 @@ class App extends Component {
       var action = Object.assign({}, this.state);
       action.friends[id - 1].clicked = true
       this.setState(action)
-      this.score();
+      this.scoring();
       let arr = this.state.friends
       this.shuffle(arr)
     }
