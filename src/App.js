@@ -15,15 +15,15 @@ class App extends Component {
   };
 
   shuffle = (array) => {
-    this.array.sort(() => Math.random() - Math.random())
+    array.sort(() => Math.random() - Math.random())
   }
 
   scoring = (id) => {
-    this.setState({ score: this.state.count + 1 })
-    if (this.state.count < this.state.highScore) {
+    this.setState({ score: this.state.score + 1 })
+    if (this.state.score < this.state.highScore) {
       this.setState({ highScore: this.state.highScore })
     } else {
-      this.setState({ highScore: this.state.count + 1 })
+      this.setState({ highScore: this.state.score + 1 })
     }
   }
 
@@ -51,9 +51,8 @@ class App extends Component {
     return (
       <div>
         <Title>
-          Clicky Game
-          <h3>{this.state.score}</h3>
-          <h3>{`Highscore: ${this.state.highScore}`}</h3>
+          Clicky Game  
+          <h5>{`Current score: ${this.state.score} Highscore: ${this.state.highScore}`}</h5>
         </Title>
         <Instruction>Please click the image to score points!</Instruction>
 
