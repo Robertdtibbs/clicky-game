@@ -1,3 +1,8 @@
+* Clicky game is a React framwork app that utilizes a on-click feature for each card to score points... but don't click the same card twice!  
+
+[Video guide for using the App](https://drive.google.com/file/d/1q_PxOFemdRbQHmao7zdDIggCb-1Nutlc/view)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
